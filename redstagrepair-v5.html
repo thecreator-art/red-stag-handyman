@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Handyman Services Los Angeles | Red Stag Handyman</title>
+<meta name="description" content="Professional handyman services across 29 cities in Los Angeles County. Licensed & insured. Same-day drywall repair, door installs, fixture mounting, caulking & more. Call (323) 555-1234 for a free estimate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Red Stag Handyman","url":"https://redstagrepair.com","telephone":"(323) 555-1234","address":{"@type":"PostalAddress","addressLocality":"Los Angeles","addressRegion":"CA","addressCountry":"US"},"description":"Licensed and insured handyman services across 29 cities in Los Angeles County.","priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"19:00"}],"areaServed":[{"@type":"City","name":"Hollywood"},{"@type":"City","name":"Glendale"},{"@type":"City","name":"Burbank"},{"@type":"City","name":"Pasadena"},{"@type":"City","name":"Beverly Hills"},{"@type":"City","name":"Sherman Oaks"},{"@type":"City","name":"Santa Monica"},{"@type":"City","name":"Long Beach"}]}</script>
+<style>
+:root{--navy:#0B1A2B;--red:#C8102E;--red-dk:#9E0C24;--cream:#F5F2ED;--bone:#E8E3DB;--dark:#1A1A1A;--text:#3A3A3A;--muted:#7A7A7A;--light:rgba(255,255,255,.45)}
+*{margin:0;padding:0;box-sizing:border-box}::selection{background:var(--red);color:#fff}html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}body{font-family:'Crimson Pro',Georgia,serif;color:var(--text);background:var(--cream);overflow-x:hidden}img{max-width:100%;display:block}a{text-decoration:none;color:inherit}
+.fc{font-family:'Barlow Condensed',sans-serif}.fb{font-family:'Crimson Pro',serif}
+
+#sp{position:fixed;top:0;left:0;height:3px;background:var(--red);z-index:10001;width:0;transition:width .08s linear}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:9999;transition:all .5s cubic-bezier(.16,1,.3,1)}
+.nav.s{background:rgba(11,26,43,.96);backdrop-filter:blur(20px) saturate(1.8);border-bottom:1px solid rgba(255,255,255,.04)}
+.ni{max-width:1360px;margin:0 auto;padding:0 clamp(1.2rem,4vw,3rem);display:flex;align-items:center;justify-content:space-between;height:76px;transition:height .4s}
+.nav.s .ni{height:60px}
+.nl{display:flex;align-items:center;gap:2.2rem}
+.nk{font-family:'Barlow Condensed';font-size:.78rem;font-weight:600;color:rgba(255,255,255,.45);letter-spacing:.1em;text-transform:uppercase;transition:color .3s}
+.nk:hover{color:#fff}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:17px 40px;font-family:'Barlow Condensed';font-size:.88rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;cursor:pointer;transition:all .35s cubic-bezier(.16,1,.3,1);border:none}
+.br{background:var(--red);color:#fff}.br:hover{background:var(--red-dk);transform:translateY(-2px);box-shadow:0 8px 32px rgba(200,16,46,.25)}
+.bo{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.2)}.bo:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.03)}
+.bd{background:var(--navy);color:#fff}.bd:hover{background:#14293f;transform:translateY(-2px)}
+.nav-cta{padding:10px 22px;font-size:.8rem;background:var(--red);color:#fff;font-family:'Barlow Condensed';font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:none;cursor:pointer;transition:all .3s}
+.nav-cta:hover{background:var(--red-dk)}
+
+.sec{padding:clamp(4.5rem,10vw,8rem) clamp(1.2rem,4vw,3rem)}.ctn{max-width:1360px;margin:0 auto}
+.ey{display:inline-flex;align-items:center;gap:12px;margin-bottom:1.5rem}
+.el{width:35px;height:1.5px;background:var(--red)}
+.et{font-family:'Barlow Condensed';font-size:.7rem;font-weight:600;color:var(--red);letter-spacing:.2em;text-transform:uppercase}
+.dv{line-height:0;margin:-2px 0;position:relative;z-index:5}.dv svg{display:block;width:100%}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--navy);overflow:hidden}
+.hi{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80') center/cover;opacity:.15}
+.ho{position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,26,43,.93),rgba(11,26,43,.78) 50%,rgba(11,26,43,.9))}
+.hg{display:grid;grid-template-columns:1fr minmax(300px,400px);gap:clamp(2rem,5vw,4rem);align-items:center}
+.hvl{position:absolute;top:0;left:clamp(2rem,8vw,7rem);width:1px;height:100%;background:linear-gradient(to bottom,transparent,rgba(255,255,255,.06) 20%,rgba(255,255,255,.06) 80%,transparent);transform-origin:top;animation:lg 1.2s ease-out forwards}
+.hvd{position:absolute;top:28%;left:-4px;width:9px;height:9px;border-radius:50%;background:var(--red);animation:pu 2.2s ease-in-out infinite}
+@keyframes lg{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes pu{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes sc{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* HERO FORM */
+.hf{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);padding:clamp(1.4rem,3vw,2rem);backdrop-filter:blur(10px)}
+.hft{font-family:'Barlow Condensed';font-weight:800;font-size:1.1rem;color:#fff;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.3rem}
+.hfs{font-family:'Crimson Pro';font-size:.82rem;font-style:italic;color:rgba(255,255,255,.3);margin-bottom:1rem}
+.fi{width:100%;padding:12px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);color:#fff;font-family:'Crimson Pro';font-size:.95rem;margin-bottom:10px;outline:none;transition:border .3s}
+.fi:focus{border-color:var(--red)}.fi::placeholder{color:rgba(255,255,255,.22);font-style:italic}
+.fs{appearance:none;cursor:pointer;color:rgba(255,255,255,.4)}.fs option{background:var(--navy);color:#fff}
+.fb-btn{width:100%;padding:15px;background:var(--red);color:#fff;font-family:'Barlow Condensed';font-size:.88rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:none;cursor:pointer;transition:all .3s;margin-top:4px}.fb-btn:hover{background:var(--red-dk)}
+.hf-social{display:flex;align-items:center;gap:6px;margin-top:.8rem;justify-content:center}
+.hf-social span{font-family:'Barlow Condensed';font-size:.65rem;color:rgba(255,255,255,.2);letter-spacing:.06em}
+.hf-social .dot{width:4px;height:4px;border-radius:50%;background:rgba(200,16,46,.3)}
+
+.hs{display:flex;gap:clamp(2rem,5vw,4.5rem);margin-top:3.5rem;border-top:1px solid rgba(255,255,255,.04);padding-top:2rem}
+.sn{font-family:'Barlow Condensed';font-weight:800;font-size:clamp(1.5rem,3vw,2.6rem);color:var(--red);line-height:1}
+.sl{font-family:'Barlow Condensed';font-size:.62rem;font-weight:500;color:rgba(255,255,255,.2);letter-spacing:.12em;text-transform:uppercase;margin-top:5px}
+
+/* TRUST BAR - ICONS NOW WHITE/CREAM NOT RED */
+.tb{background:var(--navy);border-top:1px solid rgba(255,255,255,.03);padding:1.5rem clamp(1.2rem,4vw,3rem)}
+.tbi{max-width:1360px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:clamp(1.2rem,3vw,3.5rem);flex-wrap:wrap}
+.tbg{display:flex;align-items:center;gap:8px;font-family:'Barlow Condensed';font-size:.7rem;font-weight:600;color:rgba(255,255,255,.3);letter-spacing:.08em;text-transform:uppercase}
+.tbc{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.04);display:flex;align-items:center;justify-content:center}
+
+/* MARQUEE */
+.mq{background:var(--red);padding:12px 0;overflow:hidden;position:relative;z-index:5}
+.mt{display:flex;animation:sc 35s linear infinite;white-space:nowrap}.mt:hover{animation-play-state:paused}
+.mi{font-family:'Barlow Condensed';font-weight:800;font-size:.76rem;color:#fff;letter-spacing:.14em;text-transform:uppercase;padding:0 2.2rem}
+
+/* SERVICE CARDS - ICONS NOW WHITE NOT RED */
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,295px),1fr));gap:2px}
+.sc{position:relative;overflow:hidden;cursor:pointer;background:var(--navy);border-bottom:2px solid rgba(255,255,255,.04);transition:all .5s cubic-bezier(.16,1,.3,1);padding:clamp(1.5rem,3vw,2.2rem)}
+.sc:hover{background:var(--red);border-bottom-color:rgba(255,255,255,.15)}.sc:hover .sd{color:rgba(255,255,255,.85)}.sc:hover .sll{color:#fff}.sc:hover .si{transform:scale(1.12)}
+.snn{position:absolute;top:-8px;right:12px;font-family:'Barlow Condensed';font-weight:900;font-size:4.5rem;line-height:1;color:rgba(255,255,255,.02);transition:color .5s}
+.sc:hover .snn{color:rgba(255,255,255,.06)}
+.si{width:36px;height:36px;margin-bottom:.8rem;transition:transform .4s cubic-bezier(.34,1.56,.64,1);color:rgba(255,255,255,.5)}
+.sc:hover .si{color:#fff}
+.st{font-family:'Barlow Condensed';font-weight:700;font-size:1.15rem;letter-spacing:.05em;text-transform:uppercase;color:#fff;margin-bottom:.5rem}
+.sd{font-family:'Crimson Pro';font-size:.92rem;line-height:1.6;color:rgba(255,255,255,.32);transition:color .4s}
+.sll{margin-top:1.2rem;display:flex;align-items:center;gap:6px;font-family:'Barlow Condensed';font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.25);transition:color .3s}
+
+/* PHOTO CARDS */
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:4px}
+.pk{position:relative;height:280px;overflow:hidden}
+.pk img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.pk:hover img{transform:scale(1.05)}
+.pko{position:absolute;bottom:0;left:0;right:0;padding:1.2rem;background:linear-gradient(transparent,rgba(11,26,43,.85))}
+
+/* PROCESS */
+.pcg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:0}
+.pc{padding:clamp(1.8rem,3.5vw,2.8rem);background:#fff;border-right:1px solid rgba(11,26,43,.05);position:relative}.pc:last-child{border-right:none}
+
+/* REVIEWS */
+.rc{padding:2.2rem;background:#fff;border-left:3px solid var(--red);box-shadow:0 2px 16px rgba(11,26,43,.03);height:100%;position:relative}
+
+/* FAQ - TOGGLES NOW WHITE NOT RED */
+.faq-item{border-bottom:1px solid rgba(255,255,255,.05);overflow:hidden}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.4rem 0;cursor:pointer;font-family:'Barlow Condensed';font-size:1.05rem;font-weight:700;color:rgba(255,255,255,.8);letter-spacing:.02em;transition:color .3s}
+.faq-q:hover{color:#fff}
+.faq-t{font-family:'Barlow Condensed';font-size:1.4rem;color:rgba(255,255,255,.3);transition:transform .3s,color .3s}
+.faq-q:hover .faq-t{color:var(--red)}
+.faq-item.open .faq-t{transform:rotate(45deg);color:var(--red)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1),padding .4s}
+.faq-item.open .faq-a{max-height:400px;padding-bottom:1.4rem}
+
+/* CITY TAGS - NOW NEUTRAL NOT RED */
+.ct{display:inline-block;padding:7px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.06);font-family:'Barlow Condensed';font-size:.78rem;font-weight:500;color:rgba(255,255,255,.4);letter-spacing:.04em;cursor:pointer;transition:all .3s}
+.ct:hover{background:var(--red);color:#fff;border-color:var(--red)}
+
+/* FOOTER */
+.footer{background:#080E17;padding:clamp(3.5rem,7vw,5.5rem) clamp(1.2rem,4vw,3rem) 1.5rem}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:2.5rem;margin-bottom:3.5rem}
+.fhh{font-family:'Barlow Condensed';font-weight:700;font-size:.75rem;color:rgba(255,255,255,.35);letter-spacing:.12em;text-transform:uppercase;margin-bottom:1rem}
+.fll{display:block;font-family:'Crimson Pro';font-size:.88rem;font-style:italic;color:rgba(255,255,255,.2);margin-bottom:.5rem;transition:color .2s}.fll:hover{color:var(--red)}
+
+/* STICKY PHONE BUTTON - SINGLE CTA */
+.sfb{position:fixed;bottom:24px;right:24px;z-index:9998;width:60px;height:60px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(200,16,46,.35);transition:all .3s;cursor:pointer;animation:fl 3s ease-in-out infinite}
+.sfb:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(200,16,46,.5)}
+/* MOBILE BOTTOM BAR */
+.mcta{position:fixed;bottom:0;left:0;right:0;z-index:9998;background:var(--navy);border-top:2px solid var(--red);padding:8px 16px;display:none;align-items:center;justify-content:center}
+.mcta a{padding:13px 0;font-family:'Barlow Condensed';font-weight:700;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;text-align:center;flex:1}
+.mc1{background:var(--red);color:#fff}
+
+/* CTA BAND */
+.cta-p{position:absolute;inset:0;opacity:.035;background:repeating-linear-gradient(45deg,transparent,transparent 22px,#fff 22px,#fff 23px)}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.16,1,.3,1)}.rv.v{opacity:1;transform:none}
+.rl{opacity:0;transform:translateX(-40px);transition:all .8s cubic-bezier(.16,1,.3,1)}.rl.v{opacity:1;transform:none}
+
+@media(max-width:900px){.nl{display:none!important}.mcta{display:flex}.sfb{display:none}.hg{grid-template-columns:1fr}.hf{margin-top:2rem}}
+@media(max-width:600px){.hs{flex-wrap:wrap;gap:1.5rem}.tbi{justify-content:flex-start}}
+</style>
+</head>
+<body>
+<div id="sp"></div>
+<!-- NAV -->
+<nav class="nav" id="nav"><div class="ni">
+<a href="#" style="display:flex;align-items:center;gap:10px"><svg width="34" height="34" viewBox="0 0 64 64" fill="none"><path d="M32 56V28" stroke="#C8102E" stroke-width="2.5" stroke-linecap="round"/><path d="M32 28C27 20 18 12 10 6M32 28C37 20 46 12 54 6" stroke="#C8102E" stroke-width="2.5" stroke-linecap="round"/><path d="M18 16C14 13 8 13 4 16M46 16C50 13 56 13 60 16" stroke="#C8102E" stroke-width="2" stroke-linecap="round"/><path d="M24 22L16 19M40 22L48 19" stroke="#C8102E" stroke-width="2" stroke-linecap="round"/></svg><div><div style="font-family:'Barlow Condensed';font-weight:900;font-size:1.3rem;color:#fff;letter-spacing:.07em;line-height:1">RED STAG</div><div style="font-family:'Barlow Condensed';font-weight:300;font-size:.55rem;color:rgba(255,255,255,.25);letter-spacing:.25em;text-transform:uppercase">HANDYMAN</div></div></a>
+<div class="nl">
+<a href="#services" class="nk">Services</a><a href="#process" class="nk">Process</a><a href="#areas" class="nk">Areas</a><a href="#reviews" class="nk">Reviews</a><a href="#faq" class="nk">FAQ</a>
+<a href="tel:+13235551234" class="nav-cta" style="display:inline-flex;align-items:center;gap:6px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>(323) 555-1234</a>
+</div></div></nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hi"></div><div class="ho"></div>
+<div class="hvl"><div class="hvd"></div></div>
+<div class="ctn" style="position:relative;z-index:10;padding-top:140px;padding-bottom:80px">
+<div class="hg">
+<div>
+<div class="ey rv"><div class="el"></div><span class="et">Licensed & Insured &middot; Los Angeles County</span></div>
+<h1 style="font-family:'Barlow Condensed';font-weight:900;font-size:clamp(2.8rem,7vw,5.6rem);line-height:.93;color:#fff;max-width:700px;margin-bottom:1.2rem" class="rv">STOP STARING AT <span style="color:var(--red)">YOUR TO-DO LIST.</span></h1>
+<p style="font-family:'Crimson Pro';font-weight:300;font-style:italic;font-size:clamp(1rem,1.4vw,1.12rem);color:rgba(255,255,255,.4);max-width:440px;line-height:1.75;margin-bottom:1.5rem" class="rv">One call. One team. Every small fix, repair, and install your home has been waiting for &mdash; handled by licensed LA pros who show up on time and don't leave until you're happy.</p>
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:1rem" class="rv">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+<span style="font-family:'Barlow Condensed';font-size:.78rem;font-weight:600;color:rgba(255,255,255,.35);letter-spacing:.06em">WE CALL BACK IN UNDER 30 MINUTES</span>
+</div>
+<div class="hs rv">
+<div><div class="sn" data-count="15">0</div><div class="sl">Years in LA</div></div>
+<div><div class="sn" data-count="2500">0</div><div class="sl">Jobs Done</div></div>
+<div><div class="sn" style="font-family:'Barlow Condensed';font-weight:800;font-size:clamp(1.5rem,3vw,2.6rem);color:var(--red)">4.9 &#9733;</div><div class="sl">Google Rating</div></div>
+<div><div class="sn" data-count="29">0</div><div class="sl">Cities Served</div></div>
+</div>
+</div>
+<!-- HERO FORM - SIMPLIFIED: 3 FIELDS ONLY -->
+<div class="hf rv">
+<div class="hft"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" style="margin-right:5px;vertical-align:middle"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Get Today's Estimate</div>
+<div class="hfs">No obligation. We call back in under 30 min.</div>
+<input type="text" class="fi" placeholder="Your Name" aria-label="Name">
+<input type="tel" class="fi" placeholder="Phone Number" aria-label="Phone">
+<select class="fi fs" aria-label="Service"><option value="">What do you need help with?</option><option>General Handyman</option><option>Drywall & Wall Repair</option><option>Door Repair & Install</option><option>Fixture Installation</option><option>TV & Furniture Assembly</option><option>Caulking & Sealing</option><option>Window Repair</option><option>Damage Repair</option><option>Commercial</option><option>Senior Services</option><option>Other / Not Sure</option></select>
+<button class="fb-btn">Get My Free Estimate &rarr;</button>
+<div class="hf-social"><span>127 homeowners booked this month</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="tb"><div class="tbi">
+<div class="tbg"><div class="tbc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>Licensed & Insured</div>
+<div class="tbg"><div class="tbc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>Background Checked</div>
+<div class="tbg"><div class="tbc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>Same-Day Available</div>
+<div class="tbg"><div class="tbc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>Happiness Guaranteed</div>
+<div class="tbg"><div class="tbc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>150+ Five-Star Reviews</div>
+</div></div>
+
+<!-- MARQUEE -->
+<div class="mq"><div class="mt">
+<span class="mi">24-HOUR SERVICE &bull;</span><span class="mi">FREE ESTIMATES &bull;</span><span class="mi">HAPPINESS GUARANTEED &bull;</span><span class="mi">LICENSED & INSURED &bull;</span><span class="mi">SAME-DAY AVAILABLE &bull;</span><span class="mi">BACKGROUND CHECKED &bull;</span><span class="mi">29 CITIES SERVED &bull;</span><span class="mi">NO JOB TOO SMALL &bull;</span>
+<span class="mi">24-HOUR SERVICE &bull;</span><span class="mi">FREE ESTIMATES &bull;</span><span class="mi">HAPPINESS GUARANTEED &bull;</span><span class="mi">LICENSED & INSURED &bull;</span><span class="mi">SAME-DAY AVAILABLE &bull;</span><span class="mi">BACKGROUND CHECKED &bull;</span><span class="mi">29 CITIES SERVED &bull;</span><span class="mi">NO JOB TOO SMALL &bull;</span>
+</div></div>
+
+<div class="dv"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" style="height:90px"><rect width="1440" height="90" fill="#C8102E"/><path d="M0 90L1440 0V90H0Z" fill="#F5F2ED"/></svg></div>
+
+<!-- WHY US - PROBLEM-CENTERED COPY -->
+<section class="sec" style="background:var(--cream);position:relative">
+<div style="position:absolute;inset:0;opacity:.018;background:repeating-linear-gradient(45deg,var(--navy) 0px,var(--navy) 1px,transparent 1px,transparent 14px)"></div>
+<div class="ctn" style="position:relative">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(3rem,6vw,5rem);align-items:center">
+<div>
+<div class="ey rl"><div class="el"></div><span class="et">Why LA Homeowners Choose Us</span></div>
+<h2 style="font-family:'Barlow Condensed';font-weight:900;font-size:clamp(2.1rem,4.5vw,3.4rem);color:var(--dark);line-height:.95;margin-bottom:1.8rem" class="rv">YOUR TO-DO LIST ISN'T GETTING SHORTER.<br><span style="color:var(--red)">WE FIX THAT.</span></h2>
+<p style="font-family:'Crimson Pro';font-weight:300;font-style:italic;font-size:1rem;color:var(--muted);line-height:1.85;max-width:450px;margin-bottom:2.2rem" class="rv">That leaky faucet. The door that sticks. The hole in the wall from last Thanksgiving. You've been meaning to fix it for months. Red Stag shows up, knocks out the whole list, and leaves your home better than we found it.</p>
+<div style="display:flex;flex-direction:column;gap:1.1rem" class="rv">
+<div style="display:flex;align-items:flex-start;gap:14px"><div style="min-width:22px;height:22px;background:var(--navy);display:flex;align-items:center;justify-content:center;margin-top:1px"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.9rem;color:var(--dark)">Licensed & insured</div><div style="font-family:'Crimson Pro';font-size:.85rem;color:var(--muted);font-style:italic">CA contractor license on file &mdash; you're protected</div></div></div>
+<div style="display:flex;align-items:flex-start;gap:14px"><div style="min-width:22px;height:22px;background:var(--navy);display:flex;align-items:center;justify-content:center;margin-top:1px"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.9rem;color:var(--dark)">Same-day service</div><div style="font-family:'Crimson Pro';font-size:.85rem;color:var(--muted);font-style:italic">Call before noon, we're at your door by afternoon</div></div></div>
+<div style="display:flex;align-items:flex-start;gap:14px"><div style="min-width:22px;height:22px;background:var(--navy);display:flex;align-items:center;justify-content:center;margin-top:1px"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.9rem;color:var(--dark)">Flat-rate quotes</div><div style="font-family:'Crimson Pro';font-size:.85rem;color:var(--muted);font-style:italic">You know the price before we pick up a tool</div></div></div>
+<div style="display:flex;align-items:flex-start;gap:14px"><div style="min-width:22px;height:22px;background:var(--navy);display:flex;align-items:center;justify-content:center;margin-top:1px"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.9rem;color:var(--dark)">We clean up after ourselves</div><div style="font-family:'Crimson Pro';font-size:.85rem;color:var(--muted);font-style:italic">Your home is cleaner when we leave than when we arrive</div></div></div>
+</div>
+</div>
+<div class="rv">
+<div style="position:relative;height:480px;overflow:hidden">
+<img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80" alt="Red Stag handyman professional repairing drywall in Los Angeles home" style="width:100%;height:100%;object-fit:cover" loading="lazy">
+<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(11,26,43,.6),transparent 50%)"></div>
+<div style="position:absolute;bottom:20px;left:20px;right:20px;display:flex;justify-content:space-between">
+<div style="background:var(--navy);padding:14px 22px"><div style="font-family:'Barlow Condensed';font-weight:900;font-size:1.8rem;color:#fff;line-height:1">30 min</div><div style="font-family:'Barlow Condensed';font-size:.55rem;font-weight:500;color:rgba(255,255,255,.4);letter-spacing:.12em;text-transform:uppercase;margin-top:2px">Callback time</div></div>
+<div style="background:rgba(11,26,43,.85);padding:14px 22px;backdrop-filter:blur(10px)"><div style="font-family:'Barlow Condensed';font-weight:900;font-size:1.8rem;color:var(--red);line-height:1">100%</div><div style="font-family:'Barlow Condensed';font-size:.55rem;font-weight:500;color:rgba(255,255,255,.35);letter-spacing:.12em;text-transform:uppercase;margin-top:2px">Guaranteed</div></div>
+</div>
+<div style="position:absolute;top:16px;right:16px;width:45px;height:45px;border-top:2px solid rgba(255,255,255,.08);border-right:2px solid rgba(255,255,255,.08)"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="dv"><svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="height:80px"><rect width="1440" height="80" fill="#F5F2ED"/><path d="M0 45C120 20 240 60 360 35C480 10 600 55 720 40C840 25 960 50 1080 30C1200 10 1320 45 1440 25V80H0V45Z" fill="#0B1A2B"/></svg></div>
+
+<!-- SERVICES -->
+<section id="services" class="sec" style="background:var(--navy)">
+<div class="ctn">
+<div style="text-align:center;margin-bottom:3.5rem" class="rv">
+<div style="display:inline-flex;align-items:center;gap:14px;margin-bottom:1.2rem"><div style="width:40px;height:1px;background:rgba(255,255,255,.08)"></div><svg width="16" height="16" viewBox="0 0 64 64" fill="none"><path d="M32 56V28M32 28C27 20 18 12 10 6M32 28C37 20 46 12 54 6" stroke="rgba(200,16,46,.4)" stroke-width="2.5" stroke-linecap="round"/></svg><div style="width:40px;height:1px;background:rgba(255,255,255,.08)"></div></div>
+<h2 style="font-family:'Barlow Condensed';font-weight:900;font-size:clamp(2.1rem,5vw,3.6rem);color:#fff;line-height:.93">EVERY FIX YOUR HOME <span style="color:var(--red)">HAS BEEN WAITING FOR.</span></h2>
+<p style="font-family:'Crimson Pro';font-weight:300;font-style:italic;color:rgba(255,255,255,.25);max-width:440px;margin:.8rem auto 0;font-size:.95rem;line-height:1.7">10 handyman services. One team. Licensed across all of LA County.</p>
+</div>
+<div class="sg">
+<div class="sc"><div class="snn">01</div><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><h3 class="st">General Handyman</h3><p class="sd">That entire to-do list you've been staring at? Hand it to us. We'll knock it out in one visit.</p><div class="sll">Learn More <span>&rarr;</span></div></div>
+<div class="sc"><div class="snn">02</div><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><h3 class="st">Drywall & Wall Repair</h3><p class="sd">Holes, cracks, water stains. We patch it, texture-match it, paint it. Gone by afternoon.</p><div class="sll">Learn More <span>&rarr;</span></div></div>
+<div class="sc"><div class="snn">03</div><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 17h7"/></svg></div><h3 class="st">Door Repair & Install</h3><p class="sd">That door that's been sticking since you moved in? Fixed. Screens, knobs, frames &mdash; all of it.</p><div class="sll">Learn More <span>&rarr;</span></div></div>
+<div class="sc"><div class="snn">04</div><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z"/></svg></div><h3 class="st">Fixture Installation</h3><p class="sd">Bought a new light? Smart doorbell? Ceiling fan? You unbox it, we install it. Today.</p><div class="sll">Learn More <span>&rarr;</span></div></div>
+<div class="sc"><div class="snn">05</div><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg></div><h3 class="st">TV & Furniture Assembly</h3><p class="sd">Wall-mounted right. IKEA assembled right. Zero holes in the wrong spot, guaranteed.</p><div class="sll">Learn More <span>&rarr;</span></div></div>
+<div class="sc"><div class="snn">06</div><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg></div><h3 class="st">Caulking & Sealing</h3><p class="sd">Shower caulk cracking? Windows drafty? A $200 seal job today saves a $5K water bill tomorrow.</p><div class="sll">Learn More <span>&rarr;</span></div></div>
+<div class="sc"><div class="snn">07</div><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3 class="st">Window Repair</h3><p class="sd">Stuck, foggy, or won't latch? We fix the window. If it needs replacing, our sister company handles that.</p><div class="sll">Learn More <span>&rarr;</span></div></div>
+<div class="sc"><div class="snn">08</div><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="st">Damage Repair</h3><p class="sd">After the plumber leaves or the termite company finishes &mdash; we come in and make the walls whole again.</p><div class="sll">Learn More <span>&rarr;</span></div></div>
+<div class="sc"><div class="snn">09</div><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 10h10M7 14h10M12 2v20"/></svg></div><h3 class="st">Commercial Services</h3><p class="sd">Property managers: one handyman on retainer replaces five separate specialty calls. We handle turnovers.</p><div class="sll">Learn More <span>&rarr;</span></div></div>
+<div class="sc"><div class="snn">10</div><div class="si"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3 class="st">Senior Services</h3><p class="sd">Grab bars, lever handles, ramp installs. Patient, respectful techs who treat your parents' home like their own.</p><div class="sll">Learn More <span>&rarr;</span></div></div>
+</div>
+<div style="text-align:center;margin-top:3rem" class="rv"><a href="#estimate" class="btn br">Get Today's Estimate &rarr;</a></div>
+</div>
+</section>
+
+<!-- PHOTO GRID -->
+<div class="pg">
+<div class="pk"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Professional drywall repair in Los Angeles" loading="lazy"><div class="pko"><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.9rem;color:#fff;text-transform:uppercase;letter-spacing:.06em">Drywall Repair</div><div style="font-family:'Crimson Pro';font-size:.8rem;font-style:italic;color:rgba(255,255,255,.5)">Same-day texture matching</div></div></div>
+<div class="pk"><img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80" alt="Door installation handyman service" loading="lazy"><div class="pko"><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.9rem;color:#fff;text-transform:uppercase;letter-spacing:.06em">Door Installation</div><div style="font-family:'Crimson Pro';font-size:.8rem;font-style:italic;color:rgba(255,255,255,.5)">Interior & exterior</div></div></div>
+<div class="pk"><img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&q=80" alt="Professional fixture installation" loading="lazy"><div class="pko"><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.9rem;color:#fff;text-transform:uppercase;letter-spacing:.06em">Fixture Installs</div><div style="font-family:'Crimson Pro';font-size:.8rem;font-style:italic;color:rgba(255,255,255,.5)">Lights, fans, smart home</div></div></div>
+<div class="pk"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Handyman tools and equipment" loading="lazy"><div class="pko"><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.9rem;color:#fff;text-transform:uppercase;letter-spacing:.06em">Full-Service</div><div style="font-family:'Crimson Pro';font-size:.8rem;font-style:italic;color:rgba(255,255,255,.5)">One call handles it all</div></div></div>
+</div>
+
+<div class="dv"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="height:60px"><rect width="1440" height="60" fill="var(--cream)"/><path d="M0 0H440L480 30L520 0H920L960 30L1000 0H1440V60H0V0Z" fill="#F5F2ED"/></svg></div>
+
+<!-- PROCESS -->
+<section id="process" class="sec" style="background:var(--cream)">
+<div class="ctn">
+<div style="text-align:center;margin-bottom:4rem" class="rv">
+<div class="ey" style="justify-content:center"><div class="el"></div><span class="et">How It Works</span><div class="el"></div></div>
+<h2 style="font-family:'Barlow Condensed';font-weight:900;font-size:clamp(2.1rem,4.5vw,3.3rem);color:var(--dark);line-height:.95">FOUR STEPS. <span style="color:var(--red)">ZERO HEADACHES.</span></h2>
+</div>
+<div class="pcg rv">
+<div class="pc"><div style="position:absolute;top:8px;right:14px;font-family:'Barlow Condensed';font-weight:900;font-size:3.5rem;color:rgba(11,26,43,.04);line-height:1">01</div><div style="margin-bottom:.8rem"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.68rem;color:var(--muted);letter-spacing:.15em;margin-bottom:.3rem">STEP 01</div><h3 style="font-family:'Barlow Condensed';font-weight:800;font-size:1.5rem;color:var(--dark);text-transform:uppercase;margin-bottom:.7rem">You Call or Click</h3><p style="font-family:'Crimson Pro';font-size:.92rem;font-weight:300;font-style:italic;color:var(--muted);line-height:1.75">Tell us what's bugging you. Snap a photo if you want. We get back to you in under 30 minutes.</p></div>
+<div class="pc"><div style="position:absolute;top:8px;right:14px;font-family:'Barlow Condensed';font-weight:900;font-size:3.5rem;color:rgba(11,26,43,.04);line-height:1">02</div><div style="margin-bottom:.8rem"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.68rem;color:var(--muted);letter-spacing:.15em;margin-bottom:.3rem">STEP 02</div><h3 style="font-family:'Barlow Condensed';font-weight:800;font-size:1.5rem;color:var(--dark);text-transform:uppercase;margin-bottom:.7rem">We Quote It Flat</h3><p style="font-family:'Crimson Pro';font-size:.92rem;font-weight:300;font-style:italic;color:var(--muted);line-height:1.75">No hourly surprises. No hidden fees. You see the number, you approve it, then we schedule.</p></div>
+<div class="pc"><div style="position:absolute;top:8px;right:14px;font-family:'Barlow Condensed';font-weight:900;font-size:3.5rem;color:rgba(11,26,43,.04);line-height:1">03</div><div style="margin-bottom:.8rem"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.68rem;color:var(--muted);letter-spacing:.15em;margin-bottom:.3rem">STEP 03</div><h3 style="font-family:'Barlow Condensed';font-weight:800;font-size:1.5rem;color:var(--dark);text-transform:uppercase;margin-bottom:.7rem">We Show Up & Fix</h3><p style="font-family:'Crimson Pro';font-size:.92rem;font-weight:300;font-style:italic;color:var(--muted);line-height:1.75">On time. Uniformed. Equipped. We protect your floors, do the work, and clean up everything.</p></div>
+<div class="pc"><div style="position:absolute;top:8px;right:14px;font-family:'Barlow Condensed';font-weight:900;font-size:3.5rem;color:rgba(11,26,43,.04);line-height:1">04</div><div style="margin-bottom:.8rem"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.68rem;color:var(--muted);letter-spacing:.15em;margin-bottom:.3rem">STEP 04</div><h3 style="font-family:'Barlow Condensed';font-weight:800;font-size:1.5rem;color:var(--dark);text-transform:uppercase;margin-bottom:.7rem">You Walk & Approve</h3><p style="font-family:'Crimson Pro';font-size:.92rem;font-weight:300;font-style:italic;color:var(--muted);line-height:1.75">We walk every job with you. Not happy? We fix it before we leave. That's the guarantee.</p></div>
+</div>
+</div>
+</section>
+<div class="dv"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" style="height:90px"><rect width="1440" height="90" fill="#F5F2ED"/><path d="M0 90L1440 0V90H0Z" fill="#0B1A2B"/></svg></div>
+
+<!-- REVIEWS -->
+<section id="reviews" class="sec" style="background:var(--navy)">
+<div class="ctn">
+<div style="text-align:center;margin-bottom:3.5rem" class="rv">
+<div class="ey" style="justify-content:center"><div style="width:40px;height:1px;background:rgba(255,255,255,.08)"></div><span class="et">What Homeowners Say</span><div style="width:40px;height:1px;background:rgba(255,255,255,.08)"></div></div>
+<h2 style="font-family:'Barlow Condensed';font-weight:900;font-size:clamp(2.1rem,4.5vw,3.3rem);color:#fff;line-height:.95">THEY CALLED FOR A FIX.<br><span style="color:var(--red)">THEY STAYED FOR LIFE.</span></h2>
+<p style="font-family:'Barlow Condensed';font-weight:600;font-size:.82rem;color:rgba(255,255,255,.25);letter-spacing:.08em;margin-top:.8rem">4.9 &#9733; AVERAGE &middot; 150+ VERIFIED GOOGLE REVIEWS</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:1.3rem" class="rv">
+<div class="rc"><div style="position:absolute;top:14px;right:18px;font-family:'Crimson Pro';font-size:4.5rem;line-height:1;color:rgba(200,16,46,.05);font-style:italic">&ldquo;</div><div style="color:var(--red);font-size:.85rem;letter-spacing:2px;margin-bottom:.8rem">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-family:'Crimson Pro';font-size:.95rem;font-weight:300;color:rgba(11,26,43,.55);line-height:1.8;font-style:italic;margin-bottom:1.5rem">&ldquo;Called at 9am about a doorknob hole. They were here by 1pm. Patched it, matched the texture, painted. You literally cannot tell. This is my handyman for life.&rdquo;</p><div style="display:flex;align-items:center;gap:10px"><div style="width:38px;height:38px;background:var(--bone);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed';font-weight:800;color:var(--navy);font-size:.95rem">S</div><div><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.88rem;color:var(--dark)">Sarah M.</div><div style="font-family:'Crimson Pro';font-size:.78rem;color:var(--muted);font-style:italic">Sherman Oaks</div></div></div></div>
+<div class="rc"><div style="position:absolute;top:14px;right:18px;font-family:'Crimson Pro';font-size:4.5rem;line-height:1;color:rgba(200,16,46,.05);font-style:italic">&ldquo;</div><div style="color:var(--red);font-size:.85rem;letter-spacing:2px;margin-bottom:.8rem">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-family:'Crimson Pro';font-size:.95rem;font-weight:300;color:rgba(11,26,43,.55);line-height:1.8;font-style:italic;margin-bottom:1.5rem">&ldquo;14 things bugging me for months. Red Stag knocked out every single one in an afternoon. Doors, outlets, ceiling fan, a loose railing. All handled. Incredible.&rdquo;</p><div style="display:flex;align-items:center;gap:10px"><div style="width:38px;height:38px;background:var(--bone);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed';font-weight:800;color:var(--navy);font-size:.95rem">M</div><div><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.88rem;color:var(--dark)">Marcus T.</div><div style="font-family:'Crimson Pro';font-size:.78rem;color:var(--muted);font-style:italic">Glendale</div></div></div></div>
+<div class="rc"><div style="position:absolute;top:14px;right:18px;font-family:'Crimson Pro';font-size:4.5rem;line-height:1;color:rgba(200,16,46,.05);font-style:italic">&ldquo;</div><div style="color:var(--red);font-size:.85rem;letter-spacing:2px;margin-bottom:.8rem">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p style="font-family:'Crimson Pro';font-size:.95rem;font-weight:300;color:rgba(11,26,43,.55);line-height:1.8;font-style:italic;margin-bottom:1.5rem">&ldquo;Hired them for grab bars in my mother's Craftsman home. So patient, so respectful. They noticed a loose stair railing and fixed it unprompted. That's genuine care.&rdquo;</p><div style="display:flex;align-items:center;gap:10px"><div style="width:38px;height:38px;background:var(--bone);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed';font-weight:800;color:var(--navy);font-size:.95rem">J</div><div><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.88rem;color:var(--dark)">Jennifer L.</div><div style="font-family:'Crimson Pro';font-size:.78rem;color:var(--muted);font-style:italic">Pasadena</div></div></div></div>
+</div>
+</div>
+</section>
+
+<div class="dv"><svg viewBox="0 0 1440 100" preserveAspectRatio="none" style="height:100px"><rect width="1440" height="100" fill="#0B1A2B"/><path d="M0 100L1440 15V100H0Z" fill="#F5F2ED"/><path d="M0 100L1440 25V30L0 100Z" fill="var(--navy)" opacity=".08"/></svg></div>
+
+<!-- ESTIMATE FORM + MAP -->
+<section id="estimate" class="sec" style="background:var(--cream)">
+<div class="ctn">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(3rem,6vw,5rem);align-items:start">
+<div class="rl">
+<div class="ey"><div class="el"></div><span class="et">Free Estimate</span></div>
+<h2 style="font-family:'Barlow Condensed';font-weight:900;font-size:clamp(2.1rem,4.5vw,3.3rem);color:var(--dark);line-height:.95;margin-bottom:1.5rem">TELL US WHAT'S BROKEN.<br><span style="color:var(--red)">WE'LL TELL YOU WHAT IT COSTS.</span></h2>
+<p style="font-family:'Crimson Pro';font-weight:300;font-style:italic;font-size:1rem;color:var(--muted);line-height:1.8;max-width:400px;margin-bottom:2rem">Flat-rate quote. No obligation. No surprises. You approve the price before we pick up a single tool.</p>
+<div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem">
+<div style="display:flex;align-items:center;gap:10px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span style="font-family:'Barlow Condensed';font-size:.85rem;color:var(--text);font-weight:500">No obligation &mdash; 100% free</span></div>
+<div style="display:flex;align-items:center;gap:10px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span style="font-family:'Barlow Condensed';font-size:.85rem;color:var(--text);font-weight:500">We call back in under 30 minutes</span></div>
+<div style="display:flex;align-items:center;gap:10px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="2" stroke-linecap="round"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/></svg><span style="font-family:'Barlow Condensed';font-size:.85rem;color:var(--text);font-weight:500">Flat-rate &mdash; no hourly surprises</span></div>
+</div>
+<div style="padding:1.2rem;background:var(--navy)"><div style="font-family:'Barlow Condensed';font-weight:700;font-size:.78rem;color:rgba(255,255,255,.4);letter-spacing:.08em;margin-bottom:.2rem">PREFER TO CALL?</div><a href="tel:+13235551234" style="font-family:'Barlow Condensed';font-weight:900;font-size:1.6rem;color:#fff;letter-spacing:.04em">(323) 555-1234</a><div style="font-family:'Crimson Pro';font-size:.78rem;font-style:italic;color:rgba(255,255,255,.25);margin-top:.2rem">Mon&ndash;Sat 7am&ndash;7pm &middot; Emergency 24/7</div></div>
+</div>
+<div class="rv">
+<div style="background:#fff;padding:clamp(1.8rem,3.5vw,2.5rem);border:1px solid rgba(11,26,43,.06)">
+<div style="font-family:'Barlow Condensed';font-weight:800;font-size:1.1rem;color:var(--dark);letter-spacing:.06em;text-transform:uppercase;margin-bottom:1.2rem;display:flex;align-items:center;gap:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Request Your Free Quote</div>
+<input type="text" placeholder="Full Name" style="width:100%;padding:13px 16px;border:1px solid rgba(11,26,43,.1);font-family:'Crimson Pro';font-size:.95rem;margin-bottom:10px;outline:none;background:var(--cream)" aria-label="Full Name">
+<input type="tel" placeholder="Phone Number" style="width:100%;padding:13px 16px;border:1px solid rgba(11,26,43,.1);font-family:'Crimson Pro';font-size:.95rem;margin-bottom:10px;outline:none;background:var(--cream)" aria-label="Phone">
+<input type="email" placeholder="Email Address" style="width:100%;padding:13px 16px;border:1px solid rgba(11,26,43,.1);font-family:'Crimson Pro';font-size:.95rem;margin-bottom:10px;outline:none;background:var(--cream)" aria-label="Email">
+<select style="width:100%;padding:13px 16px;border:1px solid rgba(11,26,43,.1);font-family:'Crimson Pro';font-size:.95rem;margin-bottom:10px;outline:none;background:var(--cream);appearance:none;cursor:pointer;color:var(--muted)" aria-label="Service"><option value="">Select a Service</option><option>General Handyman</option><option>Drywall & Wall Repair</option><option>Door Repair & Install</option><option>Fixture Installation</option><option>TV & Furniture Assembly</option><option>Caulking & Sealing</option><option>Window Repair</option><option>Damage Repair</option><option>Commercial</option><option>Senior Services</option><option>Other</option></select>
+<textarea placeholder="Tell us what needs fixing..." style="width:100%;padding:13px 16px;border:1px solid rgba(11,26,43,.1);font-family:'Crimson Pro';font-size:.95rem;margin-bottom:14px;outline:none;background:var(--cream);min-height:90px;resize:vertical" aria-label="Details"></textarea>
+<button style="width:100%;padding:16px;background:var(--red);color:#fff;font-family:'Barlow Condensed';font-size:.88rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:none;cursor:pointer;transition:background .3s" onmouseover="this.style.background='#9E0C24'" onmouseout="this.style.background='#C8102E'">Get My Free Estimate &rarr;</button>
+<div style="font-family:'Crimson Pro';font-size:.73rem;font-style:italic;color:var(--muted);text-align:center;margin-top:.7rem">No spam. We respect your time and your inbox.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="dv"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" style="height:90px"><rect width="1440" height="90" fill="#F5F2ED"/><path d="M0 90L1440 0V90H0Z" fill="#0B1A2B"/></svg></div>
+
+<!-- AREAS + MAP -->
+<section id="areas" class="sec" style="background:var(--navy)">
+<div class="ctn">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:3.5rem;align-items:start">
+<div class="rl">
+<div class="ey"><div style="width:35px;height:1.5px;background:rgba(200,16,46,.3)"></div><span class="et">Service Areas</span></div>
+<h2 style="font-family:'Barlow Condensed';font-weight:900;font-size:clamp(2.1rem,4.5vw,3.3rem);color:#fff;line-height:.95;margin-bottom:1.3rem">WE COME TO YOU.<br><span style="color:var(--red)">ANYWHERE IN LA.</span></h2>
+<p style="font-family:'Crimson Pro';font-weight:300;font-style:italic;color:rgba(255,255,255,.3);line-height:1.8;max-width:380px;margin-bottom:1.5rem;font-size:1rem">29 cities across Los Angeles County. Same-day service in most areas. If you're in LA, we're at your door.</p>
+<div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:2rem">
+<span class="ct">Hollywood</span><span class="ct">West Hollywood</span><span class="ct">Silver Lake</span><span class="ct">Los Feliz</span><span class="ct">Echo Park</span><span class="ct">Glendale</span><span class="ct">Burbank</span><span class="ct">Studio City</span><span class="ct">Sherman Oaks</span><span class="ct">North Hollywood</span><span class="ct">Toluca Lake</span><span class="ct">Pasadena</span><span class="ct">Beverly Hills</span><span class="ct">Bel Air</span><span class="ct">Brentwood</span><span class="ct">Santa Monica</span><span class="ct">Culver City</span><span class="ct">Eagle Rock</span><span class="ct">Highland Park</span><span class="ct">Atwater Village</span><span class="ct">La Ca&ntilde;ada Flintridge</span><span class="ct">Long Beach</span><span class="ct">Encino</span><span class="ct">Tarzana</span><span class="ct">Woodland Hills</span><span class="ct">Calabasas</span><span class="ct">Arcadia</span><span class="ct">Monrovia</span><span class="ct">Downey</span>
+</div>
+</div>
+<div class="rv" style="height:100%;min-height:400px">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27405779905!2d-118.69192113701154!3d34.02016130653294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1" width="100%" height="100%" style="border:0;min-height:400px;filter:grayscale(.35) contrast(1.05)" allowfullscreen loading="lazy" title="Red Stag Handyman Service Area Los Angeles County"></iframe>
+</div>
+</div>
+</div>
+</section>
+
+<div class="dv"><svg viewBox="0 0 1440 110" preserveAspectRatio="none" style="height:110px"><rect width="1440" height="110" fill="#0B1A2B"/><path d="M0 50C180 90 360 10 540 50C720 90 900 10 1080 50C1260 90 1350 30 1440 60V110H0V50Z" fill="#F5F2ED"/></svg></div>
+
+<!-- FAQ -->
+<section id="faq" class="sec" style="background:var(--cream)">
+<div class="ctn" style="max-width:800px">
+<div style="text-align:center;margin-bottom:3rem" class="rv">
+<div class="ey" style="justify-content:center"><div class="el"></div><span class="et">FAQ</span><div class="el"></div></div>
+<h2 style="font-family:'Barlow Condensed';font-weight:900;font-size:clamp(2rem,4vw,3rem);color:var(--dark);line-height:.95">QUESTIONS WE GET <span style="color:var(--red)">EVERY DAY.</span></h2>
+</div>
+<div class="rv" itemscope itemtype="https://schema.org/FAQPage">
+<div class="faq-item" style="border-color:rgba(11,26,43,.08)" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="color:var(--dark)"><span itemprop="name">How much does a handyman charge in Los Angeles?</span><span class="faq-t">+</span></div><div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-family:'Crimson Pro';font-size:.95rem;color:var(--muted);line-height:1.8;font-style:italic">Most handyman jobs in LA cost between $150 and $500. Small fixes like a door knob or small drywall patch start around $150. Bigger punch lists run $300 to $800. Red Stag gives you a flat-rate quote before any work begins.</p></div></div>
+<div class="faq-item" style="border-color:rgba(11,26,43,.08)" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="color:var(--dark)"><span itemprop="name">Do I need a licensed handyman in California?</span><span class="faq-t">+</span></div><div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-family:'Crimson Pro';font-size:.95rem;color:var(--muted);line-height:1.8;font-style:italic">California law requires a contractor's license for any job over $500 in combined labor and materials. Red Stag holds an active license and carries full liability insurance, so you're covered on every job regardless of size.</p></div></div>
+<div class="faq-item" style="border-color:rgba(11,26,43,.08)" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="color:var(--dark)"><span itemprop="name">Can I get same-day handyman service in LA?</span><span class="faq-t">+</span></div><div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-family:'Crimson Pro';font-size:.95rem;color:var(--muted);line-height:1.8;font-style:italic">Yes. Same-day service is available across most of our 29-city coverage area in LA County. Call before noon and we can usually have a tech at your door by the afternoon. Emergency service runs 24/7.</p></div></div>
+<div class="faq-item" style="border-color:rgba(11,26,43,.08)" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="color:var(--dark)"><span itemprop="name">What cities does Red Stag Handyman serve?</span><span class="faq-t">+</span></div><div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-family:'Crimson Pro';font-size:.95rem;color:var(--muted);line-height:1.8;font-style:italic">Red Stag Handyman serves 29 cities across Los Angeles County including Hollywood, Glendale, Burbank, Pasadena, Beverly Hills, Sherman Oaks, Santa Monica, Studio City, Long Beach, Encino, Calabasas, and more.</p></div></div>
+<div class="faq-item" style="border-color:rgba(11,26,43,.08)" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="color:var(--dark)"><span itemprop="name">Is there a minimum service charge?</span><span class="faq-t">+</span></div><div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text" style="font-family:'Crimson Pro';font-size:.95rem;color:var(--muted);line-height:1.8;font-style:italic">Our minimum is $150, which covers the first hour of work. Most small jobs like a knob swap, small patch, or fixture install finish within that first hour. Larger jobs are quoted flat-rate before we begin.</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- CTA BAND -->
+<div class="dv"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" style="height:90px"><rect width="1440" height="90" fill="#F5F2ED"/><path d="M0 90L1440 15V90H0Z" fill="#C8102E"/></svg></div>
+<section class="sec cta-band" style="background:var(--red);text-align:center;position:relative;overflow:hidden">
+<div class="cta-p"></div>
+<div class="ctn" style="position:relative;z-index:10">
+<h2 style="font-family:'Barlow Condensed';font-weight:900;font-size:clamp(2.3rem,5.5vw,3.8rem);color:#fff;line-height:.93;margin-bottom:.8rem" class="rv">THAT LIST ISN'T FIXING ITSELF.</h2>
+<p style="font-family:'Crimson Pro';font-weight:300;font-style:italic;font-size:1.1rem;color:rgba(255,255,255,.7);max-width:440px;margin:0 auto 2.2rem;line-height:1.7" class="rv">Free estimate. Same-day available. One call.</p>
+<div class="rv" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+<a href="tel:+13235551234" class="btn bd" style="display:inline-flex;align-items:center;gap:8px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>(323) 555-1234</a>
+<a href="#estimate" class="btn bo">Request Online &rarr;</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="ctn">
+<div class="fg">
+<div><div style="display:flex;align-items:center;gap:10px;margin-bottom:1rem"><svg width="24" height="24" viewBox="0 0 64 64" fill="none"><path d="M32 56V28M32 28C27 20 18 12 10 6M32 28C37 20 46 12 54 6" stroke="#C8102E" stroke-width="2.5" stroke-linecap="round"/><path d="M18 16C14 13 8 13 4 16M46 16C50 13 56 13 60 16" stroke="#C8102E" stroke-width="2" stroke-linecap="round"/></svg><div><div style="font-family:'Barlow Condensed';font-weight:900;font-size:1.05rem;color:#fff;letter-spacing:.08em">RED STAG</div><div style="font-family:'Barlow Condensed';font-weight:300;font-size:.5rem;color:rgba(255,255,255,.2);letter-spacing:.25em;text-transform:uppercase">Handyman</div></div></div><p style="font-family:'Crimson Pro';font-size:.85rem;font-weight:300;font-style:italic;color:rgba(255,255,255,.18);line-height:1.7">Licensed & insured handyman services across Los Angeles County. Part of the Red Stag family of premium home services.</p></div>
+<div><h4 class="fhh">Services</h4><a href="#" class="fll">General Handyman</a><a href="#" class="fll">Drywall Repair</a><a href="#" class="fll">Door Install & Repair</a><a href="#" class="fll">Fixture Installation</a><a href="#" class="fll">TV & Assembly</a></div>
+<div><h4 class="fhh">More</h4><a href="#" class="fll">Caulking & Sealing</a><a href="#" class="fll">Window Repair</a><a href="#" class="fll">Damage Repair</a><a href="#" class="fll">Commercial</a><a href="#" class="fll">Senior Services</a></div>
+<div><h4 class="fhh">Contact</h4><div style="font-family:'Crimson Pro';font-size:.85rem;font-style:italic;color:rgba(255,255,255,.2);line-height:2.2"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="2" stroke-linecap="round" style="vertical-align:middle;margin-right:4px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3"/></svg>(323) 555-1234<br><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="2" stroke-linecap="round" style="vertical-align:middle;margin-right:4px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@redstagrepair.com<br><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="2" stroke-linecap="round" style="vertical-align:middle;margin-right:4px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Los Angeles, CA</div><div style="margin-top:.5rem;font-family:'Barlow Condensed';font-size:.72rem;color:rgba(255,255,255,.1);letter-spacing:.04em">Mon&ndash;Sat 7am&ndash;7pm &middot; Emergency 24/7</div></div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,.03);padding-top:1.3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+<div style="font-family:'Barlow Condensed';font-size:.66rem;color:rgba(255,255,255,.1);letter-spacing:.04em">&copy; 2026 Red Stag Handyman. All rights reserved. CA Lic #XXXXXX</div>
+<div style="display:flex;gap:1.5rem"><a href="#" style="font-family:'Barlow Condensed';font-size:.66rem;color:rgba(255,255,255,.1)">Privacy</a><a href="#" style="font-family:'Barlow Condensed';font-size:.66rem;color:rgba(255,255,255,.1)">Terms</a><a href="#" style="font-family:'Barlow Condensed';font-size:.66rem;color:rgba(255,255,255,.1)">Sitemap</a></div>
+</div>
+<div style="margin-top:1.5rem;padding-top:1.3rem;border-top:1px solid rgba(255,255,255,.02);text-align:center">
+<div style="font-family:'Barlow Condensed';font-size:.55rem;color:rgba(255,255,255,.06);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.5rem">Part of the Red Stag Family</div>
+<div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
+<a href="#" style="font-family:'Barlow Condensed';font-size:.65rem;font-weight:500;color:rgba(255,255,255,.08);letter-spacing:.06em;transition:color .3s" onmouseover="this.style.color='#C8102E'" onmouseout="this.style.color='rgba(255,255,255,.08)'">Construction</a>
+<a href="#" style="font-family:'Barlow Condensed';font-size:.65rem;font-weight:500;color:rgba(255,255,255,.08);letter-spacing:.06em;transition:color .3s" onmouseover="this.style.color='#C8102E'" onmouseout="this.style.color='rgba(255,255,255,.08)'">Painting</a>
+<a href="#" style="font-family:'Barlow Condensed';font-size:.65rem;font-weight:500;color:rgba(255,255,255,.08);letter-spacing:.06em;transition:color .3s" onmouseover="this.style.color='#C8102E'" onmouseout="this.style.color='rgba(255,255,255,.08)'">Flooring</a>
+<a href="#" style="font-family:'Barlow Condensed';font-size:.65rem;font-weight:500;color:rgba(255,255,255,.08);letter-spacing:.06em;transition:color .3s" onmouseover="this.style.color='#C8102E'" onmouseout="this.style.color='rgba(255,255,255,.08)'">Windows & Doors</a>
+<a href="#" style="font-family:'Barlow Condensed';font-size:.65rem;font-weight:500;color:rgba(255,255,255,.08);letter-spacing:.06em;transition:color .3s" onmouseover="this.style.color='#C8102E'" onmouseout="this.style.color='rgba(255,255,255,.08)'">Outdoor</a>
+</div>
+</div>
+</div></footer>
+
+<!-- DESKTOP: FLOATING PHONE BUTTON -->
+<a href="tel:+13235551234" class="sfb" title="Call Red Stag Handyman"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
+
+<!-- MOBILE: BOTTOM BAR - SINGLE PRIMARY CTA -->
+<div class="mcta">
+<a href="tel:+13235551234" class="mc1" style="display:flex;align-items:center;justify-content:center;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> CALL (323) 555-1234</a>
+</div>
+
+<script>
+window.addEventListener('scroll',function(){var p=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight);document.getElementById('sp').style.width=(p*100)+'%';document.getElementById('nav').classList.toggle('s',window.scrollY>60)},{passive:true});
+var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('v')})},{threshold:.1});
+document.querySelectorAll('.rv,.rl').forEach(function(el){obs.observe(el)});
+document.querySelectorAll('[data-count]').forEach(function(el){var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){var end=parseInt(el.dataset.count),dur=2200,st=Date.now();(function t(){var p=Math.min((Date.now()-st)/dur,1);el.textContent=Math.floor((1-Math.pow(1-p,4))*end)+'+';if(p<1)requestAnimationFrame(t)})();o.disconnect()}},{threshold:.3});o.observe(el)});
+</script>
+</body></html>
