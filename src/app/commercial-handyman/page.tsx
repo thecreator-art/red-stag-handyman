@@ -26,7 +26,7 @@ export default function CommercialHandymanPage() {
     <ServicePageTemplate 
       title="Commercial Handyman Services" 
       subtitle="The reliable, licensed maintenance partner that LA property managers and retail owners trust. Fast response, heavy liability coverage, zero headaches."
-      heroImage="https://images.unsplash.com/photo-1541888086925-920a061405e3?w=1920&q=80"
+      heroImage="/images/hero.png"
       faqs={faqs}
     >
       <p><strong>What is commercial handyman service?</strong> It is the provision of dedicated, insured maintenance and repair services targeted entirely at businesses, retail storefronts, corporate offices, and property management firms, focusing on rapid response to mitigate physical liability and maintain brand aesthetics.</p>

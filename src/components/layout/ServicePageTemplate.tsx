@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 import ClientReveal from '@/components/ui/ClientReveal';
@@ -18,7 +19,7 @@ export default function ServicePageTemplate({ title, subtitle, heroImage, faqs, 
 
       {/* COMPACT HERO FOR SERVICE PAGES */}
       <section className="hero" style={{ minHeight: '60vh' }}>
-        <div className="hi" style={{ backgroundImage: `url('${heroImage}')` }}></div>
+        <div className="hi" style={{position: 'absolute', inset: 0, zIndex: -1}}><Image src={heroImage} alt={title} fill priority style={{objectFit: 'cover'}} /></div>
         <div className="ho"></div>
         <div className="hvl"><div className="hvd"></div></div>
         <div className="ctn" style={{ position: 'relative', zIndex: 10, paddingTop: '160px', paddingBottom: '60px' }}>

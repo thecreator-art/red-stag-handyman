@@ -26,7 +26,7 @@ export default function CaulkingWeatherproofingPage() {
     <ServicePageTemplate 
       title="Caulking & Weatherproofing" 
       subtitle="Stop water damage before it rots your frame, and stop your air conditioning from leaking out the front door. Precise sealing services."
-      heroImage="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1920&q=80"
+      heroImage="/images/hero.png"
       faqs={faqs}
     >
       <p><strong>What is caulking and weatherproofing?</strong> It is the application of specialized silicone, acrylic sealants, and physical weatherstripping barriers around plumbing fixtures, windows, and doors to create an impenetrable seal against water intrusion and prevent indoor air from escaping.</p>

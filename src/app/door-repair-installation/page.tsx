@@ -26,7 +26,7 @@ export default function DoorRepairPage() {
     <ServicePageTemplate 
       title="Door Repair & Installation" 
       subtitle="Stop living with that squeaking, sticking, annoying doorway. From closet bifold tracks to smart locks, we fix the entrance to every room in your home."
-      heroImage="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1920&q=80"
+      heroImage="/images/door.png"
       faqs={faqs}
     >
       <p><strong>What is door repair services?</strong> Professional door repair involves the realignment, hardware replacement, framing adjustment, or complete swapping of residential doors to ensure they swing freely, latch securely, and block drafts, eliminating daily annoyances for the homeowner.</p>

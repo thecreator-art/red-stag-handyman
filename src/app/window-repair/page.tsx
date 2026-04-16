@@ -26,7 +26,7 @@ export default function WindowRepairPage() {
     <ServicePageTemplate 
       title="Window Repair" 
       subtitle="Stuck sashes, broken locks, torn screens, and severe drafts. We get your windows sliding smoothly and locking securely."
-      heroImage="https://images.unsplash.com/photo-1510074377623-8cf13fb86c08?w=1920&q=80"
+      heroImage="/images/hero.png"
       faqs={faqs}
     >
       <p><strong>What is window repair?</strong> Window repair focuses on restoring the mechanical functionality of a window—freeing painted-shut sashes, replacing malfunctioning locks, repairing tracks for smooth opening, and replacing torn screens, without having to undergo a highly expensive full-frame window replacement.</p>

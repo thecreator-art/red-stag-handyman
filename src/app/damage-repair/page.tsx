@@ -26,7 +26,7 @@ export default function DamageRepairPage() {
     <ServicePageTemplate 
       title="Property Damage Repair" 
       subtitle="From plumbers cutting access holes to puppies chewing door frames. After the dust settles, we come in and make your home whole again."
-      heroImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80"
+      heroImage="/images/hero.png"
       faqs={faqs}
     >
       <p><strong>What is property damage repair?</strong> It is the specialty service of restoring a home's interior finishes—specifically drywall, baseboards, door casings, and structural wood—after it has been compromised by plumbing accidents, pet interactions, termite infestations, or reckless tenant behavior.</p>

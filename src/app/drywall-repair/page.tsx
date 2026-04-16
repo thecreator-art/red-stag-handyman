@@ -26,7 +26,7 @@ export default function DrywallRepairPage() {
     <ServicePageTemplate 
       title="Drywall & Wall Repair" 
       subtitle="Flawless patches, water damage remediation, perfectly matched textures, and fresh paint. We make holes disappear."
-      heroImage="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80"
+      heroImage="/images/drywall.png"
       faqs={faqs}
     >
       <p><strong>What is drywall repair?</strong> Drywall repair (or sheetrock repair) is the meticulous process of cutting out compromised gypsum board—due to accidental holes, plumbing leaks, or settling cracks—installing new backing, applying specialized joint compound, blending the wall texture perfectly with the existing surface, and fully repainting it.</p>

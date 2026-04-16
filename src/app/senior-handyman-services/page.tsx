@@ -26,7 +26,7 @@ export default function SeniorHandymanServicesPage() {
     <ServicePageTemplate 
       title="Senior Handyman Services" 
       subtitle="Aging in place requires modifications. We provide patient, respectful, and fully background-checked technicians to make your home safer, immediately."
-      heroImage="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1920&q=80"
+      heroImage="/images/hero.png"
       faqs={faqs}
     >
       <p><strong>What are senior handyman services?</strong> It is a specialized branch of home maintenance focused heavily on safety modifications—such as grab bar installation, ramp construction, and trip-hazard removal—delivered by extensively vetted, patient technicians trained to respect the home and the homeowner, allowing seniors to safely age in place.</p>

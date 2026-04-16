@@ -27,7 +27,7 @@ export default function GeneralHandymanPage() {
     <ServicePageTemplate 
       title="Handyman Services Los Angeles" 
       subtitle="Stop staring at your growing to-do list. From drywall and doors to fixtures and furniture, we are the one-call solution that handles every small fix in your LA home—permanently."
-      heroImage="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80"
+      heroImage="/images/hero.png"
       faqs={faqs}
     >
       <p><strong>What is a general handyman service?</strong> A professional handyman service provides a single, highly skilled technician equipped to handle a wide variety of minor home repairs, maintenance tasks, and small installations in a single visit, eliminating the need to hire multiple expensive specialists like plumbers, electricians, or carpenters.</p>

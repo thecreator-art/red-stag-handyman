@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import { cities } from '@/data/matrix';
 
 export default function Footer() {
   return (
     <>
-      <footer className="footer">
+      <footer className="footer" style={{ paddingBottom: '100px' }}>
         <div className="ctn">
-          <div className="fg">
+          <div className="fg" style={{ gridTemplateColumns: '1.5fr 1fr 1fr 1fr', gap: '30px' }}>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem' }}>
                 <svg width="24" height="24" viewBox="0 0 64 64" fill="none">
@@ -17,7 +18,7 @@ export default function Footer() {
                   <div style={{ fontFamily: 'var(--font-barlow)', fontWeight: 300, fontSize: '.5rem', color: 'rgba(255,255,255,.2)', letterSpacing: '.25em', textTransform: 'uppercase' }}>Handyman</div>
                 </div>
               </div>
-              <p style={{ fontFamily: 'var(--font-crimson)', fontSize: '.85rem', fontWeight: 300, color: 'rgba(255,255,255,.18)', lineHeight: 1.7 }}>Licensed & insured handyman services across Los Angeles County. Part of the Red Stag family of premium home services.</p>
+              <p style={{ fontFamily: 'var(--font-crimson)', fontSize: '.85rem', fontWeight: 300, color: 'rgba(255,255,255,.7)', lineHeight: 1.7 }}>Licensed & insured handyman services across Los Angeles County. Part of the Red Stag family of premium home services.</p>
             </div>
             <div>
               <h4 className="fhh">Services</h4>
@@ -28,16 +29,16 @@ export default function Footer() {
               <Link href="/furniture-assembly-tv-mounting/" className="fll">TV & Assembly</Link>
             </div>
             <div>
-              <h4 className="fhh">More</h4>
-              <Link href="/caulking-weatherproofing/" className="fll">Caulking & Sealing</Link>
-              <Link href="/window-repair/" className="fll">Window Repair</Link>
-              <Link href="/damage-repair/" className="fll">Damage Repair</Link>
-              <Link href="/commercial-handyman/" className="fll">Commercial</Link>
-              <Link href="/senior-handyman-services/" className="fll">Senior Services</Link>
+              <h4 className="fhh">Service Areas</h4>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                {cities.map((city) => (
+                   <Link key={city.slug} href={`/${city.slug}/`} className="fll" style={{ fontSize: '0.75rem' }}>{city.name}</Link>
+                ))}
+              </div>
             </div>
             <div>
               <h4 className="fhh">Contact</h4>
-              <div style={{ fontFamily: 'var(--font-crimson)', fontSize: '.85rem', color: 'rgba(255,255,255,.2)', lineHeight: 2.2 }}>
+              <div style={{ fontFamily: 'var(--font-crimson)', fontSize: '.85rem', color: 'rgba(255,255,255,.7)', lineHeight: 2.2 }}>
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.15)" strokeWidth="2" strokeLinecap="round" style={{ verticalAlign: 'middle', marginRight: '4px' }}><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3" /></svg>
                 (323) 555-1234<br />
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.15)" strokeWidth="2" strokeLinecap="round" style={{ verticalAlign: 'middle', marginRight: '4px' }}><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
@@ -45,15 +46,15 @@ export default function Footer() {
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.15)" strokeWidth="2" strokeLinecap="round" style={{ verticalAlign: 'middle', marginRight: '4px' }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg>
                 Los Angeles, CA
               </div>
-              <div style={{ marginTop: '.5rem', fontFamily: 'var(--font-barlow)', fontSize: '.72rem', color: 'rgba(255,255,255,.1)', letterSpacing: '.04em' }}>Mon&ndash;Sat 7am&ndash;7pm &middot; Emergency 24/7</div>
+              <div style={{ marginTop: '.5rem', fontFamily: 'var(--font-barlow)', fontSize: '.72rem', color: 'rgba(255,255,255,.5)', letterSpacing: '.04em' }}>Mon&ndash;Sat 7am&ndash;7pm &middot; Emergency 24/7</div>
             </div>
           </div>
-          <div style={{ borderTop: '1px solid rgba(255,255,255,.03)', paddingTop: '1.3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-            <div style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.1)', letterSpacing: '.04em' }}>&copy; 2026 Red Stag Handyman. All rights reserved. CA Lic #XXXXXX</div>
+          <div style={{ borderTop: '1px solid rgba(255,255,255,.15)', paddingTop: '1.3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+            <div style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.5)', letterSpacing: '.04em' }}>&copy; 2026 Red Stag Handyman. All rights reserved. CA Lic #XXXXXX</div>
             <div style={{ display: 'flex', gap: '1.5rem' }}>
-              <Link href="#" style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.1)' }}>Privacy</Link>
-              <Link href="#" style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.1)' }}>Terms</Link>
-              <Link href="#" style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.1)' }}>Sitemap</Link>
+              <Link href="#" style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.5)' }}>Privacy</Link>
+              <Link href="#" style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.5)' }}>Terms</Link>
+              <Link href="#" style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.5)' }}>Sitemap</Link>
             </div>
           </div>
         </div>

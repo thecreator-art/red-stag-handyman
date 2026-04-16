@@ -26,7 +26,7 @@ export default function FixtureInstallationPage() {
     <ServicePageTemplate 
       title="Fixture Installation" 
       subtitle="You bought the perfect light, fan, or smart doorbell. We take it out of the box and put it exactly where it belongs, securely and safely."
-      heroImage="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=1920&q=80"
+      heroImage="/images/hero.png"
       faqs={faqs}
     >
       <p><strong>What is fixture installation?</strong> Fixture installation is the professional mounting and wiring of pre-bought household items like ceiling fans, lighting pendants, bathroom faucets, or smart home devices into existing electrical or plumbing systems to instantly upgrade a room's aesthetic or function.</p>
