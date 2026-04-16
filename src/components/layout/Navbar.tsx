@@ -43,7 +43,7 @@ export default function Navbar() {
           </Link>
 
           {/* MAIN LINKS */}
-          <div className="nl" style={{ display: 'flex', alignItems: 'center', gap: '2.5rem', position: 'relative' }}>
+          <div className="nl" style={{ display: 'flex', alignItems: 'center', gap: '1.2rem', position: 'relative' }}>
             <Link href="/" className="nk">Home</Link>
 
             {/* SERVICES DROPDOWN */}
@@ -92,14 +92,14 @@ export default function Navbar() {
           </div>
 
           {/* CTA SPLIT */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '30px' }}>
-            <div style={{ textAlign: 'right' }}>
-              <div style={{ fontFamily: 'var(--font-inter)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.7)', marginBottom: '2px' }}>Call Us Anytime</div>
-              <a href="tel:+16266522303" style={{ fontFamily: 'var(--font-montserrat)', fontWeight: 800, fontSize: '1.25rem', color: 'var(--red)', letterSpacing: '0.05em' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+            <div style={{ textAlign: 'right', whiteSpace: 'nowrap' }}>
+              <div style={{ fontFamily: 'var(--font-inter)', fontSize: '0.75rem', color: 'rgba(255,255,255,0.7)', marginBottom: '2px' }}>Call Us Anytime</div>
+              <a href="tel:+16266522303" style={{ fontFamily: 'var(--font-montserrat)', fontWeight: 800, fontSize: '1.1rem', color: 'var(--red)', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>
                 (626) 652-2303
               </a>
             </div>
-            <a href="tel:+16266522303" style={{ padding: '16px 30px', background: 'var(--red)', color: '#fff', fontFamily: 'var(--font-montserrat)', fontWeight: 800, fontSize: '0.9rem', letterSpacing: '0.1em', transition: 'background 0.3s' }} className="nav-cta-btn">
+            <a href="tel:+16266522303" style={{ padding: '12px 20px', background: 'var(--red)', color: '#fff', fontFamily: 'var(--font-montserrat)', fontWeight: 800, fontSize: '0.85rem', letterSpacing: '0.08em', transition: 'background 0.3s', whiteSpace: 'nowrap' }} className="nav-cta-btn">
               GET AN ESTIMATE
             </a>
           </div>

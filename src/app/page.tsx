@@ -207,15 +207,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PHOTO GRID */}
-      <div className="pg">
-        <div className="pk"><Image src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Professional drywall repair in Los Angeles" loading="lazy" width={800} height={600} /><div className="pko"><div style={{ fontFamily: 'var(--font-barlow)', fontWeight: 700, fontSize: '.9rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '.06em' }}>Drywall Repair</div><div style={{ fontFamily: 'var(--font-crimson)', fontSize: '.8rem', color: 'rgba(255,255,255,.5)' }}>Same-day texture matching</div></div></div>
-        <div className="pk"><Image src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80" alt="Door installation handyman service" loading="lazy" width={800} height={600} /><div className="pko"><div style={{ fontFamily: 'var(--font-barlow)', fontWeight: 700, fontSize: '.9rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '.06em' }}>Door Installation</div><div style={{ fontFamily: 'var(--font-crimson)', fontSize: '.8rem', color: 'rgba(255,255,255,.5)' }}>Interior & exterior</div></div></div>
-        <div className="pk"><Image src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&q=80" alt="Professional fixture installation" loading="lazy" width={800} height={600} /><div className="pko"><div style={{ fontFamily: 'var(--font-barlow)', fontWeight: 700, fontSize: '.9rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '.06em' }}>Fixture Installs</div><div style={{ fontFamily: 'var(--font-crimson)', fontSize: '.8rem', color: 'rgba(255,255,255,.5)' }}>Lights, fans, smart home</div></div></div>
-        <div className="pk"><Image src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Handyman tools and equipment" loading="lazy" width={800} height={600} /><div className="pko"><div style={{ fontFamily: 'var(--font-barlow)', fontWeight: 700, fontSize: '.9rem', color: '#fff', textTransform: 'uppercase', letterSpacing: '.06em' }}>Full-Service</div><div style={{ fontFamily: 'var(--font-crimson)', fontSize: '.8rem', color: 'rgba(255,255,255,.5)' }}>One call handles it all</div></div></div>
-      </div>
-
-      <div className="dv"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ height: '60px' }}><rect width="1440" height="60" fill="var(--cream)" /><path d="M0 0H440L480 30L520 0H920L960 30L1000 0H1440V60H0V0Z" fill="#F5F2ED" /></svg></div>
 
       {/* PROCESS */}
       <section id="process" className="sec" style={{ background: 'var(--cream)' }}>
