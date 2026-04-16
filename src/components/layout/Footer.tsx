@@ -1,81 +1,106 @@
 import Link from 'next/link';
-import { cities } from '@/data/matrix';
+import { services, cities } from '@/data/matrix';
 
 export default function Footer() {
   return (
     <>
-      <footer className="footer" style={{ paddingBottom: '100px' }}>
-        <div className="ctn">
-          <div className="fg" style={{ gridTemplateColumns: '1.5fr 1fr 1fr 1fr', gap: '30px' }}>
+      <footer className="footer" style={{ paddingBottom: '100px', background: 'var(--navy)' }}>
+        <div className="ctn" style={{ maxWidth: '1400px' }}>
+          
+          <div className="fg" style={{ gridTemplateColumns: 'minmax(250px, 1.5fr) 1fr 1fr 1.5fr', gap: '30px' }}>
+            
+            {/* COLUMN 1: BRANDING */}
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1.5rem' }}>
                 <svg width="24" height="24" viewBox="0 0 64 64" fill="none">
                   <path d="M32 56V28M32 28C27 20 18 12 10 6M32 28C37 20 46 12 54 6" stroke="#C8102E" strokeWidth="2.5" strokeLinecap="round" />
                   <path d="M18 16C14 13 8 13 4 16M46 16C50 13 56 13 60 16" stroke="#C8102E" strokeWidth="2" strokeLinecap="round" />
                 </svg>
                 <div>
-                  <div style={{ fontFamily: 'var(--font-barlow)', fontWeight: 900, fontSize: '1.05rem', color: '#fff', letterSpacing: '.08em' }}>RED STAG</div>
-                  <div style={{ fontFamily: 'var(--font-barlow)', fontWeight: 300, fontSize: '.5rem', color: 'rgba(255,255,255,.2)', letterSpacing: '.25em', textTransform: 'uppercase' }}>Handyman</div>
+                  <div style={{ fontFamily: 'var(--font-montserrat)', fontWeight: 900, fontSize: '1.1rem', color: '#fff', letterSpacing: '.08em' }}>RED STAG</div>
+                  <div style={{ fontFamily: 'var(--font-montserrat)', fontWeight: 600, fontSize: '.5rem', color: '#fff', letterSpacing: '.25em', textTransform: 'uppercase' }}>Handyman</div>
                 </div>
               </div>
-              <p style={{ fontFamily: 'var(--font-crimson)', fontSize: '.85rem', fontWeight: 300, color: 'rgba(255,255,255,.7)', lineHeight: 1.7 }}>Licensed & insured handyman services across Los Angeles County. Part of the Red Stag family of premium home services.</p>
+              <p style={{ fontFamily: 'var(--font-inter)', fontSize: '.9rem', fontWeight: 500, color: '#fff', lineHeight: 1.7, marginBottom: '1.5rem' }}>
+                Built on Craft. Driven by Accountability.
+              </p>
+              <div style={{ fontFamily: 'var(--font-inter)', fontSize: '.85rem', color: '#fff', lineHeight: 2 }}>
+                <strong>License #964664</strong><br />
+                Est. 2011<br />
+                Licensed General Contractor - State of California<br />
+                CSLB License #964664
+              </div>
+              <div style={{ display: 'flex', gap: '12px', marginTop: '1.5rem' }}>
+                <a href="#" style={{ width: '36px', height: '36px', borderRadius: '4px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+              </div>
             </div>
+
+            {/* COLUMN 2: CONTACT US */}
             <div>
-              <h4 className="fhh">Services</h4>
-              <Link href="/handyman-services/" className="fll">General Handyman</Link>
-              <Link href="/drywall-repair/" className="fll">Drywall Repair</Link>
-              <Link href="/door-repair-installation/" className="fll">Door Install & Repair</Link>
-              <Link href="/fixture-installation/" className="fll">Fixture Installation</Link>
-              <Link href="/furniture-assembly-tv-mounting/" className="fll">TV & Assembly</Link>
+              <h4 className="fhh">CONTACT US</h4>
+              
+              <div style={{ marginBottom: '1.2rem' }}>
+                <div style={{ fontFamily: 'var(--font-inter)', fontSize: '.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: '4px' }}>Phone</div>
+                <div style={{ fontFamily: 'var(--font-inter)', fontWeight: 700, fontSize: '1.05rem', color: '#fff' }}>(626) 652-2303</div>
+              </div>
+
+              <div style={{ marginBottom: '1.2rem' }}>
+                <div style={{ fontFamily: 'var(--font-inter)', fontSize: '.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: '4px' }}>Email</div>
+                <div style={{ fontFamily: 'var(--font-inter)', fontWeight: 600, fontSize: '.9rem', color: '#fff' }}>support@redstagcc.com</div>
+              </div>
+
+              <div style={{ marginBottom: '1.2rem' }}>
+                <div style={{ fontFamily: 'var(--font-inter)', fontSize: '.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: '4px' }}>Address</div>
+                <div style={{ fontFamily: 'var(--font-inter)', fontWeight: 600, fontSize: '.9rem', color: '#fff', lineHeight: 1.5 }}>
+                  3211 Cahuenga Blvd W Ste 207<br />
+                  Los Angeles, CA 90068
+                </div>
+              </div>
+
+              <div>
+                <div style={{ fontFamily: 'var(--font-inter)', fontSize: '.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: '4px' }}>Hours</div>
+                <div style={{ fontFamily: 'var(--font-inter)', fontWeight: 600, fontSize: '.9rem', color: '#fff' }}>Mon-Sat 8AM-6PM</div>
+              </div>
             </div>
+
+            {/* COLUMN 3: SERVICES */}
             <div>
-              <h4 className="fhh">Service Areas</h4>
+              <h4 className="fhh">COMPANY</h4>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <Link href="/about" className="fll">About Red Stag</Link>
+                <Link href="/#portfolio" className="fll">Our Portfolio</Link>
+                <Link href="/#areas" className="fll">Areas We Serve</Link>
+                <Link href="/#faq" className="fll">FAQ</Link>
+                <Link href="/#reviews" className="fll">Reviews</Link>
+                <Link href="/#license" className="fll">Licenses & Insurance</Link>
+              </div>
+            </div>
+
+            {/* COLUMN 4: SERVICE AREAS (USING MATRIX CITIES OR JUST A GENERAL LINK TO KEEP IT CLEAN) */}
+            <div>
+              <h4 className="fhh">AREAS WE SERVE</h4>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
-                {cities.map((city) => (
-                   <Link key={city.slug} href={`/${city.slug}/`} className="fll" style={{ fontSize: '0.75rem' }}>{city.name}</Link>
+                {cities.slice(0, 14).map((city) => (
+                   <Link key={city.slug} href={`/${city.slug}`} className="fll" style={{ fontSize: '0.8rem' }}>{city.name}</Link>
                 ))}
               </div>
+              <Link href="/#areas" style={{ display: 'inline-block', marginTop: '15px', color: 'var(--red)', fontFamily: 'var(--font-inter)', fontSize: '.85rem', fontWeight: 600 }}>See All 29 Locations &rarr;</Link>
             </div>
-            <div>
-              <h4 className="fhh">Contact</h4>
-              <div style={{ fontFamily: 'var(--font-crimson)', fontSize: '.85rem', color: 'rgba(255,255,255,.7)', lineHeight: 2.2 }}>
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.15)" strokeWidth="2" strokeLinecap="round" style={{ verticalAlign: 'middle', marginRight: '4px' }}><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3" /></svg>
-                (323) 555-1234<br />
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.15)" strokeWidth="2" strokeLinecap="round" style={{ verticalAlign: 'middle', marginRight: '4px' }}><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
-                info@redstagrepair.com<br />
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.15)" strokeWidth="2" strokeLinecap="round" style={{ verticalAlign: 'middle', marginRight: '4px' }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg>
-                Los Angeles, CA
-              </div>
-              <div style={{ marginTop: '.5rem', fontFamily: 'var(--font-barlow)', fontSize: '.72rem', color: 'rgba(255,255,255,.5)', letterSpacing: '.04em' }}>Mon&ndash;Sat 7am&ndash;7pm &middot; Emergency 24/7</div>
-            </div>
+
           </div>
+
           <div style={{ borderTop: '1px solid rgba(255,255,255,.15)', paddingTop: '1.3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-            <div style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.5)', letterSpacing: '.04em' }}>&copy; 2026 Red Stag Handyman. All rights reserved. CA Lic #XXXXXX</div>
+            <div style={{ fontFamily: 'var(--font-inter)', fontSize: '.75rem', color: 'rgba(255,255,255,.7)', letterSpacing: '.04em' }}>&copy; 2026 Red Stag Handyman. All rights reserved. CA Lic #964664</div>
             <div style={{ display: 'flex', gap: '1.5rem' }}>
-              <Link href="#" style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.5)' }}>Privacy</Link>
-              <Link href="#" style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.5)' }}>Terms</Link>
-              <Link href="#" style={{ fontFamily: 'var(--font-barlow)', fontSize: '.66rem', color: 'rgba(255,255,255,.5)' }}>Sitemap</Link>
+              <Link href="#" style={{ fontFamily: 'var(--font-inter)', fontSize: '.75rem', color: 'rgba(255,255,255,.7)' }}>Privacy</Link>
+              <Link href="#" style={{ fontFamily: 'var(--font-inter)', fontSize: '.75rem', color: 'rgba(255,255,255,.7)' }}>Terms</Link>
+              <Link href="/sitemap.xml" style={{ fontFamily: 'var(--font-inter)', fontSize: '.75rem', color: 'rgba(255,255,255,.7)' }}>Sitemap</Link>
             </div>
           </div>
         </div>
       </footer>
-
-      {/* DESKTOP: FLOATING PHONE BUTTON */}
-      <a href="tel:+13235551234" className="sfb" title="Call Red Stag Handyman">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round">
-          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
-        </svg>
-      </a>
-
-      {/* MOBILE: BOTTOM BAR */}
-      <div className="mcta">
-        <a href="tel:+13235551234" className="mc1" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
-          </svg>
-          CALL (323) 555-1234
-        </a>
-      </div>
     </>
   );
 }
